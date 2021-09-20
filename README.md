@@ -1,18 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My Portfolio
+> This repo contains the first version of my personal portfolio create from microverse.
+## 1. Mobile phone View: 
+![screenshot](./mobile-screenshot.png)
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+This is a simple portfolio that i built based on Microverse Portfolio's Figma design using css.
 
 ## Built With
 
-- Major languages
+- Major languages: HTML / CSS
 - Frameworks
-- Technologies used
+- Technologies used : GIT / GITHUB / LINTERS 
 
 ## Live Demo
 
@@ -27,33 +26,21 @@ Additional description about the project and its features.
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites : Knowloge about html,css flexbox, Git, Github and linter
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+1. First clone the project $ git clone https://github.com/RolandM99/My-portfolio.git
+2. Then open index.html in your browser
+3. [optional] You can even fork the project
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Roland Manful Mweze**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Rolandm99](https://github.com/RolandM99)
+- Twitter: [@Manfulmwez](https://twitter.com/ManfulMwez)
+- LinkedIn: [Roland N. MWEZE](https://www.linkedin.com/in/roland-n-mweze-8b1045189/)
 
 ## 🤝 Contributing
 
