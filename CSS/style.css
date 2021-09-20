@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#my-logo {
+  position: static;
+  width: 77px;
+  height: 24px;
+  left: 12px;
+  top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0;
+  color: #fff;
+}
+
+.tool-flex {
+  display: flex;
+}
+
+.logo {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: 101px;
+  height: 44px;
+  left: 1px;
+}
+
+.container-header {
+  position: fixed;
+  width: 100%;
+  height: 48px;
+  margin-right: 0;
+  background-color: rgb(78, 76, 76);
+  top: 0;
+  left: 0;
+}
+
+.container-header .tool-flex {
+  display: flex;
+}
+
+#show-menu {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 355px;
+  top: 5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.bar-menu {
+  position: static;
+  left: 20%;
+  right: 18%;
+  top: 20%;
+  bottom: 20%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.welcome {
+  position: absolute;
+  width: 327px;
+  height: 124px;
+  left: 24px;
+  top: 94px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.text-supporting {
+  position: static;
+  width: 327px;
+  height: 27px;
+  top: 255px;
+  left: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 13px;
+}
+
+#me {
+  margin-top: 540px;
+  margin-left: 10px;
+  display: inline;
+}
+
+.description {
+  position: static;
+  width: 327px;
+  height: 123px;
+  top: 275px;
+  left: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 270px 24px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  top: 450px;
+  left: -12px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.main-headline {
+  position: static;
+  background-repeat: no-repeat;
+  height: 577px;
+  width: 405px;
+  margin-left: -8px;
+  top: 0.003173828125px;
+  border-radius: 0;
+  background-color: black;
+}
+
+ul li {
+  display: inline;
+}
+
+li a {
+  justify-content: space-around;
+  padding-left: 20px;
+}
+
+.img-background {
+  position: absolute;
+  display: flex;
+  margin-left: 120px;
+}
+
+#background {
+  width: 60%;
+  margin-left: 112px;
+  margin-top: 148px;
+}
