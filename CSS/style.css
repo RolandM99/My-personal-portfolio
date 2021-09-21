@@ -172,6 +172,10 @@ body {
   top: 0.003173828125px;
   border-radius: 0;
   background-color: black;
+  background-image: url("/images/background-mobile.png");
+  background-size: 165px;
+  background-position-x: right;
+  background-position-y: 170px;
 }
 
 ul li {
@@ -181,16 +185,4 @@ ul li {
 li a {
   justify-content: space-around;
   padding-left: 20px;
-}
-
-.img-background {
-  position: absolute;
-  display: flex;
-  margin-left: 120px;
-}
-
-#background {
-  width: 60%;
-  margin-left: 112px;
-  margin-top: 148px;
 }
