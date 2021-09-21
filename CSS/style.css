@@ -172,7 +172,7 @@ body {
   top: 0.003173828125px;
   border-radius: 0;
   background-color: black;
-  background-image: url("/images/background-mobile.png");
+  background-image: url("../images/background-mobile.png");
   background-size: 165px;
   background-position-x: right;
   background-position-y: 170px;
@@ -207,7 +207,7 @@ li a {
 }
 
 .image-recent {
-  background: url("/images/recent-work.png");
+  background: url("../images/recent-work.png");
   background-repeat: no-repeat;
   width: 356px;
   height: 245px;
