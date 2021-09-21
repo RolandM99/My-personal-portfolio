@@ -15,7 +15,7 @@ This is a simple portfolio that i built based on Microverse Portfolio's Figma de
 
 ## Live Demo
 
-[Live Demo Link](https://rolandm99.github.io/My-personal-portfolio/)
+[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
