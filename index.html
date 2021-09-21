@@ -55,11 +55,11 @@
        </section>
        <section class="works">
         <div class="recent-work-title">
-          <h1 id="recent">My Recent Works</h1>
+          <h1 class="recent">My Recent Works</h1>
           <hr id="recent-line">
         </div>
         <div class="image-recent">  
-          <a><img src="images/recent-work.png" alt="work" id="recentwork"></a>
+          <a><img class="recentwork"></a>
         </div>
         <div class="recent-detail">
           <h1 id="multi">Multi-Post Stories</h1>
@@ -67,14 +67,14 @@
             sign-ups required. has been the industry's standard dummy text ever
             since the 1500s, when an unknown printer took a standard dummy text.
           </p>
-          <ul id="used-lg">
+          <ul class="used-lg">
             <li><a class="used">css</a></li>
             <li><a class="used">html</a></li>
             <li><a class="used">Boostrap</a></li>
             <li><a class="used">Ruby</a></li>
           </ul>
-          <form action="myproject.html">
-            <input id="recent-btn" type="submit" name="button"  value="See Project"/>
+          <form class="btn-position" action="myproject.html">
+            <input class="recent-btn" type="submit" name="button"  value="See Project"/>
           </form>
         </div>
         <div class="card-work">
@@ -167,36 +167,42 @@
       </section>
       <section class="main-about">
         <div class="about-me">
-            <h1 id="abt-title">About me</h1>
-          <p id="abt-text">Hello I’m a software developer! I can help you build a product , 
+            <h1 class="abt-title">About me</h1>
+          <p class="abt-text">Hello I’m a software developer! I can help you build a product , 
             feature or website Look through some of my work and experience!
              f you like what you see and have a project you need coded,
              don’t hestiate to contact me.</p>
-            <form action="#myproject">
-              <input id="abt-btn" type="submit" name="button"  value="Get my Resume"/>
+            <form class="abt-position" action="#myproject">
+              <input class="abt-btn" type="submit" name="button"  value="Get my Resume"/>
             </form>
-          <img id="abt-frame" src="images/about-frame.png" alt="img"><hr id="abt-line"> 
+          <img class="abt-frame" src="images/about-frame.png" alt="img"><hr id="abt-line"> 
         </div>
         <div class="about-categories">
-          <ul id="category">
-            <li><img src="images/icon-language.png"  alt="img"><h3 id="lang">Languages</h3>
-              <a>Javascript</a>
-              <a>Ruby</a>
-              <a>Html</a>
-              <a>Css</a>
+          <ul class="category">
+            <li><img src="images/icon-language.png" id="lang-icon" alt="img"><h3 class="lang">Languages</h3>
+              <ul>
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>Html</li>
+                <li>Css</li>
+              </ul>
             </li>
-            <li><img src="images/icon-framework.png" id="fram-icon" alt="img"><h3 id="fram">Frameworks</h3>
-              <a>Ruby on Rails</a>
-              <a>RSPec</a>
-              <a>CapyBara</a>
-              <a>React</a>
+            <li><img src="images/icon-framework.png" id="fram-icon" alt="img"><h3 class="fram">Frameworks</h3>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>RSPec</li>
+                <li>CapyBara</li>
+                <li>React</li>
+              </ul>
             </li>
-            <li><img src="images/icon-skills.png" id="skill-icon" alt="img"><h3 id="skill">Skills</h3>
-              <a>Codekit</a>
-              <a>Github</a>
-              <a>Codepen</a>
-              <a>Gitlab</a>
-              <a>Terminal</a>
+            <li><img src="images/icon-skills.png" id="skill-icon" alt="img"><h3 class="skill">Skills</h3>
+              <ul>
+                <li>Codekit</li>
+                <li>Github</li>
+                <li>Codepen</li>
+                <li>Gitlab</li>
+                <li>Terminal</li>
+              </ul>
             </li>
           </ul>
         </div>
