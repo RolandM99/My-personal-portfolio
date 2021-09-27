@@ -271,6 +271,8 @@ hr {
 
 .used {
   border: 1px solid #8993a4;
+  float: left;
+  margin-bottom: 15px;
   padding: 10px;
   margin-left: 8px;
   font-family: 'Inter', sans-serif;
@@ -313,8 +315,10 @@ hr {
 
 .work-btn {
   align-items: center;
-  margin-top: -53px;
+  margin-top: 93px;
+  height: 20px;
   margin-left: -190px;
+  margin-bottom: -50px;
   display: flex;
 }
 
@@ -395,6 +399,7 @@ hr {
 .used1 {
   background-color: rgb(78, 76, 76);
   padding: 10px;
+  float: left;
   color: #fbf8f7;
   margin-left: 8px;
   font-family: 'Inter', sans-serif;
