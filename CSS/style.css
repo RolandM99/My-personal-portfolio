@@ -549,13 +549,28 @@ h3 {
   padding-left: 195px;
 }
 
-input[type="text"] {
+input[type="email"] {
   display: block;
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 15px;
-  width: 358px;
-  margin-left: 29px;
+  width: 347px;
+  margin-left: -10px;
+  height: 52px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  transition: 0.2s ease;
+}
+
+input[type="text"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-left: -10px;
+  padding: 15px;
+  width: 347px;
   height: 52px;
   border: none;
   border-bottom: 1px solid #aaa;
@@ -582,8 +597,117 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.contact-section {
+  display: grid;
+  grid-gap: 58px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 100px;
+  grid-template-rows: 58px 480px;
+}
+
+.contact-text {
+  text-align: center;
+  position: static;
+  width: 357px;
+  height: 216px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  padding-left: -10px;
+  line-height: 40px;
+  color: #172b4d;
+  margin: 24px 0;
+}
+
+.contact-form {
+  left: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  position: static;
+  width: 327px;
+  height: 330px;
+  top: 334px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 250px 24px;
+}
+
+#submit {
+  text-align: center;
+  margin: 180px 100px;
+  padding: 12px;
+  border: 1px solid;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #f4f5f7;
+  font-size: 17px;
+  background-color: #ff6b00;
+  line-height: 24px;
+}
+
+#submit:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  box-sizing: border-box;
+}
+
+#comment {
+  width: 340px;
+  background: #fbf8f7;
+  position: absolute;
+  margin-left: -14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 24px;
+  color: black;
+  margin-top: 16px;
+  height: 114px;
+  text-transform: capitalize;
+  border: none;
+  padding: 5px;
+}
+
+#line {
+  border: 5px rgb(0, 0, 0);
+  border-radius: 40px;
+  height: 4px;
+  width: 120px;
+  margin-top: 10px;
+  margin-right: 145px;
+}
+
+#top-line {
+  margin-top: 200px;
+  height: 1px;
+  margin-bottom: 50px;
+  width: 405px;
+  background-color: #dfe1e6;
+  order: 1;
+}
+
+.contact {
+  margin-left: 34px;
+}
+
+.contact ul li a {
+  margin-left: 10px;
+}
+
+#social-ctc {
+  color: black;
+}
+
 footer {
   text-align: center;
-  padding: 10px 0 14px 0;
+  padding: 10px 0 10px 0;
   background-color: rgb(78, 76, 76);
 }
