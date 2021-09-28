@@ -44,6 +44,12 @@ To get a local copy up and running follow these simple example steps.
 
 ## 🤝 Contributing
 
+👤 **Ishmael Kargbo**
+
+- GitHub: [@ishmaelkargbo](https://github.com/ishmaelkargbo)
+- Twitter: [@IshoKargbo](https://twitter.com/IshoKargbo)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ishmael-kargbo-9a986a214)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
