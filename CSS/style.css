@@ -3,6 +3,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
 }
 
 #my-logo {
@@ -43,12 +44,16 @@ body {
 
 .container-header {
   position: fixed;
-  width: 405px;
+  width: 100%;
   height: 48px;
   margin-right: 0;
   background-color: rgb(78, 76, 76);
   top: 0;
   left: 0;
+}
+
+.header-section {
+  width: 200px;
 }
 
 .container-header .tool-flex {
@@ -68,6 +73,10 @@ body {
   flex-direction: row;
 }
 
+.nav-bar ul {
+  display: none;
+}
+
 .bar-menu {
   position: static;
   left: 20%;
@@ -78,6 +87,62 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-header {
+    height: 72px;
+    width: 1440px;
+  }
+
+  .header-section {
+    margin-left: 142px;
+  }
+
+  #my-logo {
+    margin-top: 26px;
+  }
+
+  #show-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    margin-left: 800px;
+    background-image: url("../images/Union.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 25px;
+    margin-right: 156px;
+    margin-top: -26px;
+    width: 600px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    width: 255px;
+    margin-top: -10px;
+    padding: 12px 60px;
+    justify-content: space-around;
+    height: 40px;
+    right: 50px;
+  }
+
+  #navigation li a {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: #fff;
+    width: 45px;
+    height: 20px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    flex: none;
+  }
 }
 
 .d-flex {
@@ -163,19 +228,66 @@ body {
   margin: 12px 0;
 }
 
-.main-headline {
-  position: static;
+.container-headline {
   background-repeat: no-repeat;
   height: 577px;
   width: 405px;
-  margin-left: -8px;
   top: 0.003173828125px;
   border-radius: 0;
-  background-color: black;
   background-image: url("../images/background-mobile.png");
   background-size: 165px;
   background-position-x: right;
   background-position-y: 170px;
+  background-color: black;
+}
+
+.main-headline {
+  position: static;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-headline {
+    width: 1440px;
+    height: 870px;
+    background-size: 600px;
+    background-position-y: top;
+    background-image: url("../images/Illustration-header.png");
+  }
+
+  .main-headline {
+    width: 1440px;
+  }
+
+  .welcome {
+    margin-left: 123px;
+    top: 240px;
+  }
+
+  .text-supporting {
+    margin-left: 138px;
+  }
+
+  #me {
+    margin-top: 860px;
+  }
+
+  .description {
+    margin-left: 148px;
+    width: 566px;
+    margin-top: 445px;
+  }
+
+  .social-media ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+  }
+
+  .social-media ul li {
+    justify-content: space-around;
+    padding: 10px;
+  }
 }
 
 ul li {
@@ -342,10 +454,11 @@ hr {
   display: grid;
   margin-left: 24px;
   padding-top: 24px;
+  margin-top: 24px;
   grid-gap: 24px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   margin-right: 24px;
-  grid-template-rows: repeat(5, 357px);
+  grid-template-rows: repeat(5, 386px);
 }
 
 .card1-work {
@@ -402,8 +515,54 @@ hr {
   left: -20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .works {
+    width: 1440px;
+  }
+
+  hr {
+    width: 794px;
+  }
+
+  #recent-line {
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  .recent {
+    width: 355px;
+    margin-top: -5px;
+  }
+
+  .recent-work-title {
+    margin-left: 153px;
+    margin-top: 135px;
+  }
+
+  .image-recent {
+    margin-top: 121px;
+    background-size: 655px;
+    width: 684px;
+    height: 454px;
+    margin-left: 141px;
+  }
+
+  .recent-detail {
+    margin-left: 849px;
+    width: 448px;
+    margin-top: -490px;
+    height: 140px;
+  }
+
+  .card-work {
+    margin: 0 141px 0 141px;
+    grid-template-columns: repeat(3, 369px);
+  }
+}
+
 .main-about {
   background-color: black;
+  width: 405px;
   margin-top: 80px;
   height: 1700px;
 }
@@ -547,6 +706,83 @@ h3 {
 
 #skill-icon {
   padding-left: 195px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-about {
+    margin-top: -1220px;
+    width: 1440px;
+    height: 1120px;
+    background-image: url("../images/illustration-about\ me.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 100px;
+  }
+
+  .abt-frame {
+    display: none;
+  }
+
+  .about-me {
+    margin-left: 142px;
+  }
+
+  .abt-text {
+    width: 566px;
+    margin-top: 24px;
+    margin-bottom: -80px;
+  }
+
+  #abt-line {
+    margin-top: 130px;
+    margin-right: 142px;
+    width: 1156px;
+  }
+
+  .category li {
+    display: inline;
+    align-items: center;
+  }
+
+  .category .fram {
+    margin-left: 500px;
+    margin-top: -322px;
+  }
+
+  #fram-icon {
+    margin-top: -400px;
+    margin-bottom: 287px;
+    margin-left: 330px;
+  }
+
+  .category .skill {
+    margin-top: -390px;
+    margin-left: 1000px;
+  }
+
+  #skill-icon {
+    margin-top: -288px;
+    margin-bottom: 355px;
+    margin-left: 750px;
+  }
+
+  .category {
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 153px;
+  }
+
+  .category li .framework {
+    margin-left: 450px;
+  }
+
+  .category li .skills {
+    margin-left: 930px;
+  }
+
+  .category li ul {
+    align-items: flex-start;
+  }
 }
 
 input[type="email"] {
@@ -708,6 +944,62 @@ input[type="submit"] {
 
 footer {
   text-align: center;
+  width: 100%;
   padding: 10px 0 10px 0;
   background-color: rgb(78, 76, 76);
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    width: 1440px;
+  }
+
+  .contact-section {
+    grid-template-rows: 58px 260px;
+  }
+
+  .contact-text {
+    margin-top: 20px;
+    width: 455px;
+    height: 256px;
+    margin-left: 100px;
+    text-align: left;
+  }
+
+  .contact-form {
+    margin-left: 614px;
+    margin-right: 142px;
+    margin-top: -65px;
+    width: 684px;
+  }
+
+  #comment {
+    width: 684px;
+  }
+
+  #submit {
+    margin-left: -18px;
+  }
+
+  #name {
+    width: 684px;
+  }
+
+  #mail {
+    width: 684px;
+  }
+
+  #line {
+    display: none;
+  }
+
+  #top-line {
+    width: 1400px;
+  }
+
+  .contact ul {
+    margin-left: 520px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+  }
 }
