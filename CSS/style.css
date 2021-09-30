@@ -89,7 +89,7 @@ body {
   flex-grow: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 995px) {
   .container-header {
     height: 72px;
     width: 1440px;
@@ -246,7 +246,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 995px) {
   .container-headline {
     width: 1440px;
     height: 870px;
@@ -515,7 +515,7 @@ hr {
   left: -20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 995px) {
   .works {
     width: 1440px;
   }
@@ -708,7 +708,7 @@ h3 {
   padding-left: 195px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 995px) {
   .main-about {
     margin-top: -1220px;
     width: 1440px;
@@ -949,7 +949,7 @@ footer {
   background-color: rgb(78, 76, 76);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 995px) {
   footer {
     width: 1440px;
   }
