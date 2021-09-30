@@ -89,7 +89,7 @@ body {
   flex-grow: 0;
 }
 
-@media only screen and (min-width: 995px) {
+@media only screen and (min-width: 992px) {
   .container-header {
     height: 72px;
     width: 1440px;
@@ -145,13 +145,9 @@ body {
   }
 }
 
-.d-flex {
-  display: flex;
-}
-
 .welcome {
   position: absolute;
-  width: 327px;
+  width: 337px;
   height: 124px;
   left: 24px;
   top: 94px;
@@ -170,7 +166,7 @@ body {
 
 .text-supporting {
   position: static;
-  width: 327px;
+  width: 337px;
   height: 27px;
   top: 255px;
   left: 24px;
@@ -196,7 +192,7 @@ body {
 
 .description {
   position: static;
-  width: 327px;
+  width: 337px;
   height: 123px;
   top: 275px;
   left: 24px;
@@ -231,7 +227,7 @@ body {
 .container-headline {
   background-repeat: no-repeat;
   height: 577px;
-  width: 405px;
+  width: 425px;
   top: 0.003173828125px;
   border-radius: 0;
   background-image: url("../images/background-mobile.png");
@@ -246,7 +242,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 995px) {
+@media only screen and (min-width: 992px) {
   .container-headline {
     width: 1440px;
     height: 870px;
@@ -301,14 +297,14 @@ li a {
 
 .works {
   display: grid;
-  width: 405px;
+  width: 425px;
   margin-top: 24px;
 }
 
 .recent-work-title {
   position: static;
   height: 50px;
-  margin-left: 24px;
+  margin-left: 28px;
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -321,12 +317,12 @@ li a {
 .image-recent {
   background: url("../images/recent-work.png");
   background-repeat: no-repeat;
-  width: 356px;
+  width: 366px;
   height: 245px;
-  margin-left: 24px;
+  margin-left: 28px;
   margin-right: 24px;
   margin-top: 140px;
-  background-size: 354px;
+  background-size: 364px;
 }
 
 #recent-line {
@@ -350,8 +346,8 @@ hr {
 }
 
 .recent-detail {
-  margin-left: 24px;
-  width: 357px;
+  margin-left: 28px;
+  width: 367px;
   margin-right: 24px;
 }
 
@@ -464,6 +460,7 @@ hr {
 .card1-work {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
   width: 357px;
+  margin-left: 8px;
   height: 386px;
 }
 
@@ -515,54 +512,9 @@ hr {
   left: -20px;
 }
 
-@media only screen and (min-width: 995px) {
-  .works {
-    width: 1440px;
-  }
-
-  hr {
-    width: 794px;
-  }
-
-  #recent-line {
-    margin-left: 20px;
-    margin-top: -20px;
-  }
-
-  .recent {
-    width: 355px;
-    margin-top: -5px;
-  }
-
-  .recent-work-title {
-    margin-left: 153px;
-    margin-top: 135px;
-  }
-
-  .image-recent {
-    margin-top: 121px;
-    background-size: 655px;
-    width: 684px;
-    height: 454px;
-    margin-left: 141px;
-  }
-
-  .recent-detail {
-    margin-left: 849px;
-    width: 448px;
-    margin-top: -490px;
-    height: 140px;
-  }
-
-  .card-work {
-    margin: 0 141px 0 141px;
-    grid-template-columns: repeat(3, 369px);
-  }
-}
-
 .main-about {
   background-color: black;
-  width: 405px;
+  width: 425px;
   margin-top: 80px;
   height: 1700px;
 }
@@ -605,7 +557,7 @@ hr {
 
 .abt-frame {
   margin-top: -90px;
-  margin-left: 222px;
+  margin-left: 232px;
   width: 45%;
 }
 
@@ -637,6 +589,10 @@ hr {
 #abt-line {
   background-color: #fbf8f7;
   margin-top: 10px;
+}
+
+.contact ul {
+  width: 327px;
 }
 
 .category li ul li {
@@ -708,83 +664,6 @@ h3 {
   padding-left: 195px;
 }
 
-@media only screen and (min-width: 995px) {
-  .main-about {
-    margin-top: -1220px;
-    width: 1440px;
-    height: 1120px;
-    background-image: url("../images/illustration-about\ me.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 100px;
-  }
-
-  .abt-frame {
-    display: none;
-  }
-
-  .about-me {
-    margin-left: 142px;
-  }
-
-  .abt-text {
-    width: 566px;
-    margin-top: 24px;
-    margin-bottom: -80px;
-  }
-
-  #abt-line {
-    margin-top: 130px;
-    margin-right: 142px;
-    width: 1156px;
-  }
-
-  .category li {
-    display: inline;
-    align-items: center;
-  }
-
-  .category .fram {
-    margin-left: 500px;
-    margin-top: -322px;
-  }
-
-  #fram-icon {
-    margin-top: -400px;
-    margin-bottom: 287px;
-    margin-left: 330px;
-  }
-
-  .category .skill {
-    margin-top: -390px;
-    margin-left: 1000px;
-  }
-
-  #skill-icon {
-    margin-top: -288px;
-    margin-bottom: 355px;
-    margin-left: 750px;
-  }
-
-  .category {
-    margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 153px;
-  }
-
-  .category li .framework {
-    margin-left: 450px;
-  }
-
-  .category li .skills {
-    margin-left: 930px;
-  }
-
-  .category li ul {
-    align-items: flex-start;
-  }
-}
-
 input[type="email"] {
   display: block;
   box-sizing: border-box;
@@ -845,7 +724,7 @@ input[type="submit"] {
 .contact-text {
   text-align: center;
   position: static;
-  width: 357px;
+  width: 370px;
   height: 216px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -858,7 +737,6 @@ input[type="submit"] {
 }
 
 .contact-form {
-  left: 24px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -871,7 +749,7 @@ input[type="submit"] {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 250px 24px;
+  margin: 250px 32px;
 }
 
 #submit {
@@ -918,14 +796,14 @@ input[type="submit"] {
   height: 4px;
   width: 120px;
   margin-top: 10px;
-  margin-right: 145px;
+  margin-right: 115px;
 }
 
 #top-line {
   margin-top: 200px;
   height: 1px;
   margin-bottom: 50px;
-  width: 405px;
+  width: 425px;
   background-color: #dfe1e6;
   order: 1;
 }
@@ -935,7 +813,7 @@ input[type="submit"] {
 }
 
 .contact ul li a {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .social-ctc {
@@ -944,12 +822,232 @@ input[type="submit"] {
 
 footer {
   text-align: center;
-  width: 100%;
+  width: 425px;
   padding: 10px 0 10px 0;
   background-color: rgb(78, 76, 76);
 }
 
-@media only screen and (min-width: 995px) {
+@media only screen and (min-width: 530px) {
+  .container-header {
+    height: 72px;
+    width: 1440px;
+  }
+
+  .header-section {
+    margin-left: 142px;
+  }
+
+  #my-logo {
+    margin-top: 26px;
+  }
+
+  #show-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    margin-left: 800px;
+    background-image: url("../images/Union.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 25px;
+    margin-right: 156px;
+    margin-top: -26px;
+    width: 600px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    width: 255px;
+    margin-top: -10px;
+    padding: 12px 60px;
+    justify-content: space-around;
+    height: 40px;
+    right: 50px;
+  }
+
+  #navigation li a {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: #fff;
+    width: 45px;
+    height: 20px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    flex: none;
+  }
+
+  .container-headline {
+    width: 1440px;
+    height: 870px;
+    background-size: 600px;
+    background-position-y: top;
+    background-image: url("../images/Illustration-header.png");
+  }
+
+  .main-headline {
+    width: 1440px;
+  }
+
+  .welcome {
+    margin-left: 123px;
+    top: 240px;
+  }
+
+  .text-supporting {
+    margin-left: 138px;
+  }
+
+  #me {
+    margin-top: 860px;
+  }
+
+  .description {
+    margin-left: 148px;
+    width: 566px;
+    margin-top: 445px;
+  }
+
+  .social-media ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+  }
+
+  .category li {
+    display: inline;
+    align-items: center;
+  }
+
+  .social-media ul li {
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .works {
+    width: 1440px;
+  }
+
+  hr {
+    width: 794px;
+  }
+
+  #recent-line {
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  .recent {
+    width: 355px;
+    margin-top: -5px;
+  }
+
+  .recent-work-title {
+    margin-left: 153px;
+    margin-top: 135px;
+  }
+
+  .image-recent {
+    margin-top: 121px;
+    background-size: 655px;
+    width: 684px;
+    height: 454px;
+    margin-left: 141px;
+  }
+
+  .recent-detail {
+    margin-left: 849px;
+    width: 448px;
+    margin-top: -490px;
+    height: 140px;
+  }
+
+  .card-work {
+    margin: 0 141px 0 141px;
+    grid-template-columns: repeat(3, 369px);
+  }
+
+  .main-about {
+    margin-top: -1220px;
+    width: 1440px;
+    height: 1120px;
+    background-image: url("../images/illustration-about\ me.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 100px;
+  }
+
+  .abt-frame {
+    display: none;
+  }
+
+  .about-me {
+    margin-left: 142px;
+  }
+
+  .abt-text {
+    width: 566px;
+    margin-top: 24px;
+    margin-bottom: -80px;
+  }
+
+  #abt-line {
+    margin-top: 130px;
+    margin-right: 142px;
+    width: 1156px;
+  }
+
+  .category .fram {
+    margin-left: 500px;
+    margin-top: -322px;
+  }
+
+  #fram-icon {
+    margin-top: -400px;
+    margin-bottom: 287px;
+    margin-left: 330px;
+  }
+
+  .category .skill {
+    margin-top: -390px;
+    margin-left: 1000px;
+  }
+
+  #skill-icon {
+    margin-top: -288px;
+    margin-bottom: 355px;
+    margin-left: 750px;
+  }
+
+  .category {
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 153px;
+  }
+
+  .category li .framework {
+    margin-left: 450px;
+  }
+
+  .category li .skills {
+    margin-left: 930px;
+  }
+
+  .contact ul {
+    margin-left: 520px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+  }
+
+  .category li ul {
+    align-items: flex-start;
+  }
+
   footer {
     width: 1440px;
   }
@@ -995,11 +1093,5 @@ footer {
 
   #top-line {
     width: 1400px;
-  }
-
-  .contact ul {
-    margin-left: 520px;
-    margin-top: -10px;
-    padding-bottom: 10px;
   }
 }
