@@ -5,6 +5,9 @@
 ## 1. Mobile phone View: 
 ![screenshot](./mobile-screenshot.png)
 
+## 2. Desktop View:
+![screenshot](./desktop_screenshot.png)
+
 This is a simple Portfolio that i built based on Microverse Portfolio's Figma design using css.
 
 ## Built With
