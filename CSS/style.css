@@ -12,6 +12,7 @@ body {
   height: 24px;
   left: 12px;
   top: 10px;
+  text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -818,6 +819,16 @@ input[type="submit"] {
 
 .social-ctc {
   color: black;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.social-ctc:hover {
+  width: 30px;
+  margin-bottom: 10px;
+  height: 30px;
+  background-color: #b8550e;
+  padding: 5px;
 }
 
 footer {
@@ -882,6 +893,11 @@ footer {
     flex: none;
   }
 
+  #navigation li a:hover:focus {
+    font-size: 24px;
+    color: #f08a50;
+  }
+
   .container-headline {
     width: 1440px;
     height: 870px;
@@ -927,6 +943,19 @@ footer {
   .social-media ul li {
     justify-content: space-around;
     padding: 10px;
+  }
+
+  .social-media ul li a img {
+    transition-property: all;
+    transition-duration: 2s;
+  }
+
+  .social-media ul li a img:hover {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6b00;
+    padding: 5px;
   }
 
   .works {
