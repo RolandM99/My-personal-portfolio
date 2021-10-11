@@ -93,7 +93,11 @@ body {
 @media only screen and (min-width: 992px) {
   .container-header {
     height: 72px;
-    width: 1440px;
+    width: 100%;
+  }
+
+  .main-headline {
+    overflow-x: hidden;
   }
 
   .header-section {
@@ -188,7 +192,6 @@ body {
 #me {
   margin-top: 540px;
   margin-left: 10px;
-  display: inline;
 }
 
 .description {
@@ -245,7 +248,7 @@ body {
 
 @media only screen and (min-width: 992px) {
   .container-headline {
-    width: 1440px;
+    width: 2500px;
     height: 870px;
     background-size: 600px;
     background-position-y: top;
@@ -253,7 +256,8 @@ body {
   }
 
   .main-headline {
-    width: 1440px;
+    width: 9%;
+    overflow-x: hidden;
   }
 
   .welcome {
@@ -335,7 +339,6 @@ li a {
 
 .recent {
   margin-top: 30px;
-  display: inline;
 }
 
 hr {
@@ -402,6 +405,7 @@ hr {
   margin-top: 30px;
   position: static;
   width: 120px;
+  padding: 5px 5px 5px 15px;
   height: 48px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -422,9 +426,10 @@ hr {
 
 .work-btn {
   align-items: center;
-  margin-top: -53px;
+  margin-top: -18px;
   margin-left: -190px;
   display: flex;
+  height: 50px;
 }
 
 .see-btn {
@@ -793,11 +798,12 @@ input[type="submit"] {
 
 #line {
   border: 5px rgb(0, 0, 0);
+  position: absolute;
   border-radius: 40px;
   height: 4px;
   width: 120px;
-  margin-top: 10px;
-  margin-right: 115px;
+  margin-top: 5px;
+  margin-left: 115px;
 }
 
 #top-line {
@@ -811,6 +817,7 @@ input[type="submit"] {
 
 .contact {
   margin-left: 34px;
+  margin-bottom: 40px;
 }
 
 .contact ul li a {
@@ -841,7 +848,7 @@ footer {
 @media only screen and (min-width: 530px) {
   .container-header {
     height: 72px;
-    width: 1440px;
+    width: 100%;
   }
 
   .header-section {
@@ -857,7 +864,7 @@ footer {
   }
 
   .nav-bar {
-    margin-left: 800px;
+    margin-left: 1020px;
     background-image: url("../images/Union.png");
     background-repeat: no-repeat;
     background-position-x: right;
@@ -899,7 +906,7 @@ footer {
   }
 
   .container-headline {
-    width: 1440px;
+    width: 100%;
     height: 870px;
     background-size: 600px;
     background-position-y: top;
@@ -907,7 +914,8 @@ footer {
   }
 
   .main-headline {
-    width: 1440px;
+    width: 1685px;
+    overflow-x: hidden;
   }
 
   .welcome {
@@ -959,11 +967,11 @@ footer {
   }
 
   .works {
-    width: 1440px;
+    width: 1685px;
   }
 
   hr {
-    width: 794px;
+    width: 920px;
   }
 
   #recent-line {
@@ -991,19 +999,32 @@ footer {
 
   .recent-detail {
     margin-left: 849px;
-    width: 448px;
+    width: 668px;
     margin-top: -490px;
     height: 140px;
   }
 
   .card-work {
     margin: 0 141px 0 141px;
-    grid-template-columns: repeat(3, 369px);
+    grid-gap: 70px;
+    grid-template-columns: repeat(3, 400px);
+  }
+
+  .card1-work {
+    width: 400px;
+  }
+
+  .see-btn {
+    padding-right: 259.5px;
+  }
+
+  .work-btn {
+    margin-top: 25px;
   }
 
   .main-about {
     margin-top: -1220px;
-    width: 1440px;
+    width: 100%;
     height: 1120px;
     background-image: url("../images/illustration-about\ me.png");
     background-repeat: no-repeat;
@@ -1028,7 +1049,11 @@ footer {
   #abt-line {
     margin-top: 130px;
     margin-right: 142px;
-    width: 1156px;
+    width: 1385px;
+  }
+
+  .category {
+    margin-left: 40px;
   }
 
   .category .fram {
@@ -1068,7 +1093,7 @@ footer {
   }
 
   .contact ul {
-    margin-left: 520px;
+    margin-left: 620px;
     margin-top: -10px;
     padding-bottom: 10px;
   }
@@ -1078,11 +1103,12 @@ footer {
   }
 
   footer {
-    width: 1440px;
+    width: 100%;
   }
 
   .contact-section {
     grid-template-rows: 58px 260px;
+    margin-left: 120px;
   }
 
   .contact-text {
@@ -1121,6 +1147,6 @@ footer {
   }
 
   #top-line {
-    width: 1400px;
+    width: 1680px;
   }
 }
