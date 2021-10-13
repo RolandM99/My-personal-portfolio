@@ -30,37 +30,37 @@ const data = [
     linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
     linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
   },
-  {
-    title: 'Keeping track of hundreds of components website',
-    technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
-    image: 'images/popup-image.png',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
-    linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
-  },
-  {
-    title: 'Keeping track of hundreds of components website',
-    technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
-    image: 'images/popup-image.png',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
-    linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
-  },
-  {
-    title: 'Keeping track of hundreds of components website',
-    technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
-    image: 'images/popup-image.png',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
-    linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
-  },
+  // {
+  //   title: 'Keeping track of hundreds of components website',
+  //   technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
+  //   image: 'images/popup-image.png',
+  //   text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+  //   linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+  //   linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
+  // },
+  // {
+  //   title: 'Keeping track of hundreds of components website',
+  //   technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
+  //   image: 'images/popup-image.png',
+  //   text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+  //   linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+  //   linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
+  // },
+  // {
+  //   title: 'Keeping track of hundreds of components website',
+  //   technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
+  //   image: 'images/popup-image.png',
+  //   text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+  //   linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+  //   linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
+  // },
 ]
 
 
 const htmlPop = `<div class="popup-window">
 <div class="titlt-line">
   <h2>${data[0].title}</h2>
-  <span>X</span>
+  <small>X</small>
 </div>
 <div class="techno-used">
   <ul>
@@ -83,10 +83,21 @@ const htmlPop = `<div class="popup-window">
 </div>
 </div>`;
 
+const sectionWork = document.querySelector('#portfolio > .startPop');
+sectionWork.innerHTML = htmlPop;
 
-const button = document.getElementsByClassName('see-btn');
-const popupWin = document.querySelector('.popup-window');
+
+sectionWork.style.display = 'none';
+
+const button = document.querySelector('#recent-btn');
+// const popupWin = document.querySelector('.popup-window');
 
 button.addEventListener('click', () => {
-  popupWin.classList.add('.show');
+  sectionWork.style.display = 'block';
+});
+
+buttonToHide = document.querySelector('#portfolio > div.startPop > div > div.titlt-line > small');
+
+buttonToHide.addEventListener('click', () => {
+  sectionWork.style.display = 'none';
 });
