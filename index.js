@@ -1,6 +1,16 @@
 const menuWord = document.querySelectorAll('.word');
 const hamburger = document.querySelector('.hamburger');
 const listMenu = document.querySelector('.navigation');
+const button = document.getElementsByClassName('see-btn');
+
+const data = [
+  {
+    title: 'Multi Post Stories',
+    technologies: ['HTML', 'Ruby on rails', 'Boostrap'],
+    image: 'images/popup-image.png'
+  },
+]
+
 const menuAppear = () => {
   hamburger.addEventListener('click', () => {
     listMenu.classList.toggle('navigation-active');
