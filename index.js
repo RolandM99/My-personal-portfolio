@@ -26,56 +26,58 @@ const data = [
     title: 'Keeping track of hundreds of components website',
     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
     image: 'images/popup-image.png',
-    text: 'loromu dhfgkjdshggfwkejhgtfi',
-    button: ['See Live', 'See Source'],
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+    linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
   },
   {
     title: 'Keeping track of hundreds of components website',
     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
     image: 'images/popup-image.png',
-    text: 'loromu dhfgkjdshggfwkejhgtfi',
-    button: ['See Live', 'See Source'],
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+    linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
   },
   {
     title: 'Keeping track of hundreds of components website',
     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
     image: 'images/popup-image.png',
-    text: 'loromu dhfgkjdshggfwkejhgtfi',
-    button: ['See Live', 'See Source'],
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+    linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
   },
   {
     title: 'Keeping track of hundreds of components website',
     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
     image: 'images/popup-image.png',
-    text: 'loromu dhfgkjdshggfwkejhgtfi',
-    button: ['See Live', 'See Source'],
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+    linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
   },
 ]
 
 
-const data = `<div class="popup-window">
+const htmlPop = `<div class="popup-window">
 <div class="titlt-line">
-  <h2>Keeping Tracks of hundreds of components websites</h2>
+  <h2>${data[0].title}</h2>
   <span>X</span>
 </div>
 <div class="techno-used">
   <ul>
-    <li>HTML</li>
-    <li>Bootstrap</li>
-    <li>Ruby on Rails</li>
+    <li>${data[0].technologies[0]}</li>
+    <li>${data[0].technologies[1]}</li>
+    <li>${data[0].technologies[2]}</li>
   </ul>
 </div>
 <div class="popup-container">
   <div class="img-container">
-    <img src="../images/popup-image.png" alt=" ">
+    <img src="${data[0].image}" alt="">
   </div>
   <div class="popup-text">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure in odit officiis 
-      perferendis autem optio nesciunt! Dicta dolores eligendi,
-       sapiente magni quidem repudiandae earum, harum quos facilis nesciunt aperiam.</p>
+    <p>${data[0].text}</p>
        <div class="popup-btn">
-         <button type="button" class="btn-pop">See Live</button>
-         <button type="button" class="btn-pop">See Source</button>
+         <button type="button" href=${data[0].linkLive} class="btn-pop">See Live</button>
+         <button type="button" href=${data[0].linkSource} class="btn-pop">See Source</button>
        </div>
   </div>
 </div>
