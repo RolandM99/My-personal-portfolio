@@ -114,8 +114,8 @@ const mError = document.querySelector('.error-msg');
 
 myFormContact.addEventListener('submit', (event) => {
   const myEmail = document.querySelector('#mail').value;
-  if (myEmail.value !== myEmail.value.toLowerCase()) {
-    mError.innerHTML = 'Please, write your email in lowercase';
+  if (myEmail !== myEmail.toLowerCase()) {
+    mError.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Please, write your email in lowercase!';
+    event.preventDefault();
   }
-  event.preventDefault();
 });
