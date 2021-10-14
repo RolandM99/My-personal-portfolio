@@ -597,6 +597,7 @@ hr {
 }
 
 .see-btn {
+  cursor: pointer;
   padding-right: 117px;
   margin-top: 43px;
   padding-left: 120px;
@@ -613,15 +614,6 @@ hr {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.see {
-  text-decoration: none;
-  color: #fbf8f7;
-}
-
-.see:hover {
-  color: #f55800;
 }
 
 .see-btn:hover {

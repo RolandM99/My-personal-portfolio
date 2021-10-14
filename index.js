@@ -30,41 +30,41 @@ const data = [
     linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
     linkSource: 'https://github.com/RolandM99/My-personal-portfolio',
   },
-   {
-     title: 'Keeping track of hundreds of components website',
-     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
-     image: 'images/popup-image.png',
-     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-     linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
-     linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
-   },
-   {
-     title: 'Keeping track of hundreds of components website',
-     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
-     image: 'images/popup-image.png',
-     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-     linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
-     linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
-   },
-   {
-     title: 'Keeping track of hundreds of components website',
-     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
-     image: 'images/popup-image.png',
-     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure in odit officiis perferendis autem optio nesciunt! Dicta dolores eligendi, sapiente magni quidem repudiandae earum, harum quos facilis nesciunt aperiam.',
-     linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
-     linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
-   },
-   {
+  {
+    title: 'Keeping track of hundreds of components website',
+    technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
+    image: 'images/popup-image.png',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+    linkSource: 'https://github.com/RolandM99/My-personal-portfolio',
+  },
+  {
+    title: 'Keeping track of hundreds of components website',
+    technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
+    image: 'images/popup-image.png',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+    linkSource: 'https://github.com/RolandM99/My-personal-portfolio',
+  },
+  {
     title: 'Keeping track of hundreds of components website',
     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
     image: 'images/popup-image.png',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure in odit officiis perferendis autem optio nesciunt! Dicta dolores eligendi, sapiente magni quidem repudiandae earum, harum quos facilis nesciunt aperiam.',
     linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
-    linkSource: 'https://github.com/RolandM99/My-personal-portfolio'
-  }
-]
+    linkSource: 'https://github.com/RolandM99/My-personal-portfolio',
+  },
+  {
+    title: 'Keeping track of hundreds of components website',
+    technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
+    image: 'images/popup-image.png',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure in odit officiis perferendis autem optio nesciunt! Dicta dolores eligendi, sapiente magni quidem repudiandae earum, harum quos facilis nesciunt aperiam.',
+    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
+    linkSource: 'https://github.com/RolandM99/My-personal-portfolio',
+  },
+];
 
-for (let i=0; i < data.length; i ++) {
+for (let i = 0; i < data.length; i += 1) {
   const modalData = data[i];
   const htmlPop = `<div class="popup-window">
   <div class="title-line">
@@ -95,21 +95,19 @@ for (let i=0; i < data.length; i ++) {
   const sectionWork = document.querySelector('#portfolio > .startPop');
   sectionWork.innerHTML = htmlPop;
 
-
   sectionWork.style.display = 'none';
 
   const buttonRecent = document.querySelectorAll('.see-btn');
   // const popupWin = document.querySelector('.popup-window');
- for (let i=0; i < buttonRecent.length; i++) {
-  buttonRecent[i].addEventListener('click', () => {
-    sectionWork.style.display = 'block';
-    
-  buttonToHide = document.querySelector('#portfolio > div.startPop > div > div.title-line > span');
+  for (let i = 0; i < buttonRecent.length; i += 1) {
+    buttonRecent[i].addEventListener('click', () => {
+      sectionWork.style.display = 'block';
+      window.location.replace('#');
+      const buttonToHide = document.querySelector('#portfolio > div.startPop > div > div.title-line > span');
 
-  buttonToHide.addEventListener('click', () => {
-    sectionWork.style.display = 'none';
-  });
-  });
- }
+      buttonToHide.addEventListener('click', () => {
+        sectionWork.style.display = 'none';
+      });
+    });
+  }
 }
-
