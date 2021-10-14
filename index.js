@@ -19,8 +19,6 @@ const menuDisappear = () => {
 menuAppear();
 menuDisappear();
 
-// Popup window
-
 const data = [
   {
     title: 'Keeping track of hundreds of components website',
@@ -98,7 +96,6 @@ for (let i = 0; i < data.length; i += 1) {
   sectionWork.style.display = 'none';
 
   const buttonRecent = document.querySelectorAll('.see-btn');
-  // const popupWin = document.querySelector('.popup-window');
   for (let i = 0; i < buttonRecent.length; i += 1) {
     buttonRecent[i].addEventListener('click', () => {
       sectionWork.style.display = 'block';
