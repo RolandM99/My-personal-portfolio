@@ -108,3 +108,14 @@ for (let i = 0; i < data.length; i += 1) {
     });
   }
 }
+
+const myFormContact = document.querySelector('#contact > div.contact-form > form');
+const mError = document.querySelector('.error-msg');
+
+myFormContact.addEventListener('submit', (event) => {
+  const myEmail = document.querySelector('#mail').value;
+  if (myEmail.value !== myEmail.value.toLowerCase()) {
+    mError.innerHTML = 'Please, write your email in lowercase';
+  }
+  event.preventDefault();
+});
