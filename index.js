@@ -128,9 +128,9 @@ myFormContact.addEventListener('submit', (event) => {
   }
 });
 
-const userName = document.getElementById('#name');
-const userText = document.getElementById('#comment');
-const userEmail = document.querySelector('#mail');
+const userName = document.getElementById('name');
+const userText = document.getElementById('comment');
+const userEmail = document.getElementById('mail');
 
 function saveAndPrefill() {
   const textData = localStorage.getItem('dataStorage');
@@ -145,9 +145,9 @@ function saveAndPrefill() {
 }
 
 const inputData = {
-  enterEmail: saveAndPrefill().enterEmail,
-  enterName: saveAndPrefill().enterName,
-  enterText: saveAndPrefill().enterText,
+  enterEmail: userEmail.value,
+  enterName: userName.value,
+  enterText: userText.value,
 };
 function storedInput() {
   if (localStorage.getItem('dataStorage') !== JSON.stringify(inputData)) {
@@ -155,19 +155,22 @@ function storedInput() {
   }
 }
 
-userEmail.addEventListener('change', (e) => {
-  inputData.enterEmail = e.target.value;
-  storedInput();
-});
+myFormContact.addEventListener('change', storedInput);
 
-userName.addEventListener('change', (e) => {
-  inputData.enterName = e.target.value;
-  storedInput();
-});
 
-userText.addEventListener('change', (e) => {
-  inputData.enterText = e.target.value;
-  storedInput();
-});
+// userEmail.addEventListener('change', (e) => {
+//   inputData.enterEmail = e.target.value;
+//   storedInput();
+// });
+
+// userName.addEventListener('change', (e) => {
+//   inputData.enterName = e.target.value;
+//   storedInput();
+// });
+
+// userText.addEventListener('change', (e) => {
+//   inputData.enterText = e.target.value;
+//   storedInput();
+// });
 
 saveAndPrefill();
