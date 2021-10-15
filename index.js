@@ -24,7 +24,7 @@ const data = [
     title: 'Keeping track of hundreds of components website',
     technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
     image: 'images/popup-image.png',
-    text: '1 Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure in odit officiis perferendis autem optio nesciunt! Dicta dolores eligendi sapiente magni quidem repudiandae earum, harum quos facilis nesciunt aperiam.',
+    text: '1 Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure in odit officiis perferendis autem optio nesciunt! Dicta dolores repudiandae earum, harum quos facilis nesciunt aperiam.',
     linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
     linkSource: 'https://github.com/RolandM99/My-personal-portfolio',
   },
@@ -136,8 +136,8 @@ function saveAndPrefill() {
   const textData = localStorage.getItem('dataStorage');
   if (textData) {
     const storedData = JSON.parse(textData);
-    userEmail.value = storedData.enterEmail;
     userName.value = storedData.enterName;
+    userEmail.value = storedData.enterEmail;
     userText.value = storedData.enterText;
     return storedData;
   }
@@ -145,8 +145,8 @@ function saveAndPrefill() {
 }
 
 const inputData = {
-  enterEmail: userEmail.value,
   enterName: userName.value,
+  enterEmail: userEmail.value,
   enterText: userText.value,
 };
 function storedInput() {
@@ -155,22 +155,11 @@ function storedInput() {
   }
 }
 
-myFormContact.addEventListener('change', storedInput);
-
-
-// userEmail.addEventListener('change', (e) => {
-//   inputData.enterEmail = e.target.value;
-//   storedInput();
-// });
-
-// userName.addEventListener('change', (e) => {
-//   inputData.enterName = e.target.value;
-//   storedInput();
-// });
-
-// userText.addEventListener('change', (e) => {
-//   inputData.enterText = e.target.value;
-//   storedInput();
-// });
+myFormContact.addEventListener('change', () => {
+  inputData.enterName = userName.value;
+  inputData.enterEmail = userEmail.value;
+  inputData.enterText = userText.value;
+  storedInput();
+});
 
 saveAndPrefill();
