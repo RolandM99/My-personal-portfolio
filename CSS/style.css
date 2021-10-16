@@ -107,6 +107,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
+  height: 600px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -993,6 +994,8 @@ input[type="text"] {
 }
 
 footer {
+  position: absolute;
+  margin-bottom: 0;
   text-align: center;
   width: 425px;
   padding: 10px 0 10px 0;
