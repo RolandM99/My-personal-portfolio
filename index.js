@@ -29,12 +29,12 @@ const data = [
     linkSource: 'https://github.com/RolandM99/My-personal-portfolio',
   },
   {
-    title: 'Keeping track of hundreds of components website',
-    technologies: ['HTML', 'Boostrap', 'Ruby on rails'],
-    image: 'images/popup-image.png',
-    text: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit papapapapapapapapapapapapapapapa',
-    linkLive: 'https://rolandm99.github.io/My-personal-portfolio/',
-    linkSource: 'https://github.com/RolandM99/My-personal-portfolio',
+    title: 'Strong Women DRC',
+    technologies: ['HTML', 'Boostrap', 'CSS', 'Javascript'],
+    image: 'images/conferencepopup.PNG',
+    text: 'StrongWomen DRC promotes girls’ education and empowers rural victims of sexual violence through capacity building interventions in technology, agriculture, and advocacy of equal rights and opportunities. It focused on initiating peace-building activities.',
+    linkLive: 'https://rolandm99.github.io/Capstone-Conference-page/',
+    linkSource: 'https://github.com/RolandM99/Capstone-Conference-page',
   },
   {
     title: 'Keeping track of hundreds of components website',
@@ -81,6 +81,7 @@ function accsessData(n) {
       <li class="list-tech">${data[n].technologies[0]}</li>
       <li class="list-tech">${data[n].technologies[1]}</li>
       <li class="list-tech">${data[n].technologies[2]}</li>
+      <li class="list-tech">${data[n].technologies[3]}</li>
     </ul>
   </div>
   <div class="popup-container">
