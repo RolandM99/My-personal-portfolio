@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # My Portfolio
-> This is my first version of my personal portfolio create from microverse.
+> This is my first version of my portfolio create from microverse.
 This project was build with HTML/CSS and some basics of JavaScript.
 ## 1. Mobile phone View: 
 ![screenshot](./mobile-screenshot.png)
